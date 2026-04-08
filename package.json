@@ -1,0 +1,16 @@
+{
+  "name": "Dartc-test-task",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "watch": "vite --host 0.0.0.0",
+    "build": "vite build --mode production",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "vite": "^7.1.9"
+  }
+}
