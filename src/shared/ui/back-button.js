@@ -1,5 +1,6 @@
 export function initBackButtons() {
     const buttons = document.querySelectorAll('[data-back-button]');
+    const homePath = import.meta.env.BASE_URL;
 
     if (!buttons.length) {
         return;
@@ -12,7 +13,7 @@ export function initBackButtons() {
                 return;
             }
 
-            location.href = '/';
+            location.href = homePath;
         });
     });
 }
