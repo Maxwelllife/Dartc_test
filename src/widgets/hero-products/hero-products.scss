@@ -2,136 +2,136 @@
 @use '../../shared/styles/variables' as *;
 
 .hero-products {
-  display: grid;
-  gap: 12px;
+    display: grid;
+    gap: 12px;
 
-  &__slider {
-    min-width: 0;
-    margin-left: 4px;
-    width: calc(100vw - 16px);
-    max-width: calc(100vw - 16px);
-    overflow: hidden;
+    &__slider {
+        min-width: 0;
+        margin-left: 4px;
+        width: calc(100vw - 16px);
+        max-width: calc(100vw - 16px);
+        overflow: hidden;
 
-    .splide__track {
-      overflow: hidden;
+        .splide__track {
+            overflow: hidden;
+        }
+
+        .splide__slide {
+            width: 296px;
+
+            @include tablet {
+                width: auto;
+            }
+        }
+
+        .splide__pagination {
+            bottom: -18px;
+        }
+
+        .splide__pagination__page {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background: rgba(66, 48, 125, 0.2);
+
+            &.is-active {
+                background: $color-brand;
+                transform: scale(1);
+            }
+        }
+
+        .splide__arrow {
+            width: 40px;
+            height: 40px;
+            background: $color-brand;
+            border: 0;
+            opacity: 1;
+
+            svg {
+                fill: $color-page;
+            }
+
+            &:hover:not(:disabled) {
+                background: $color-brand-dark;
+            }
+        }
+
+        @include tablet {
+            margin-left: 0;
+            width: auto;
+            max-width: none;
+            overflow: visible;
+        }
     }
-
-    .splide__slide {
-      width: 296px;
-
-      @include tablet {
-        width: auto;
-      }
-    }
-
-    .splide__pagination {
-      bottom: -18px;
-    }
-
-    .splide__pagination__page {
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      background: rgba(66, 48, 125, 0.2);
-
-      &.is-active {
-        background: $color-brand;
-        transform: scale(1);
-      }
-    }
-
-    .splide__arrow {
-      width: 40px;
-      height: 40px;
-      background: $color-brand;
-      border: 0;
-      opacity: 1;
-
-      svg {
-        fill: $color-page;
-      }
-
-      &:hover:not(:disabled) {
-        background: $color-brand-dark;
-      }
-    }
-
-    @include tablet {
-      margin-left: 0;
-      width: auto;
-      max-width: none;
-      overflow: visible;
-    }
-  }
 }
 
 .hero-card {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  min-height: 164px;
-  overflow: hidden;
-  border-radius: 16px;
-  background-color: #d0d5dd;
-  background-size: cover;
-  background-position: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(16, 24, 40, 0.02), rgba(16, 24, 40, 0.5));
-  }
-
-  &__overlay {
     position: relative;
-    z-index: 1;
-    display: grid;
-    width: 100%;
-    gap: 12px;
-    padding: 14px 12px 12px;
+    display: flex;
+    align-items: flex-end;
+    min-height: 164px;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #d0d5dd;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(16, 24, 40, 0.02), rgba(16, 24, 40, 0.5));
+    }
+
+    &__overlay {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        width: 100%;
+        gap: 12px;
+        padding: 14px 12px 12px;
+
+        @include tablet {
+            padding: 24px 24px 24px 60px;
+        }
+    }
+
+    &__label {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    &__title {
+        margin: 0;
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.02;
+        text-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+
+        @include tablet {
+            font-size: 42px;
+        }
+    }
+
+    &__button {
+        min-height: 34px;
+        width: fit-content;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+
+        @include tablet {
+            min-height: 46px;
+        }
+    }
 
     @include tablet {
-      padding: 24px 24px 24px 60px;
+        min-height: 280px;
+        border-radius: 24px;
     }
-  }
-
-  &__label {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 26px;
-  }
-
-  &__title {
-    margin: 0;
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.02;
-    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
-
-    @include tablet {
-      font-size: 42px;
-    }
-  }
-
-  &__button {
-    min-height: 34px;
-    width: fit-content;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-
-    @include tablet {
-      min-height: 46px;
-    }
-  }
-
-  @include tablet {
-    min-height: 280px;
-    border-radius: 24px;
-  }
 }

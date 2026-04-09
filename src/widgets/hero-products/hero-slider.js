@@ -26,7 +26,7 @@ export function initHeroSlider() {
         arrows: false,
         perMove: 1,
         gap: '15px',
-        padding: { right: '44px' },
+        padding: {right: '44px'},
         speed: 700,
         focus: 0,
         breakpoints: {
@@ -36,14 +36,14 @@ export function initHeroSlider() {
                 pagination: true,
                 perPage: 1,
                 gap: '18px',
-                padding: { right: '0px' },
+                padding: {right: '0px'},
             },
             992: {
                 autoWidth: false,
                 perPage: 1,
                 arrows: true,
                 gap: '24px',
-                padding: { right: '0px' },
+                padding: {right: '0px'},
             },
         },
     });

@@ -9,9 +9,9 @@
 @use '../../shared/styles/mixins' as *;
 
 .page-content {
-  padding: 28px 0 122px;
+    padding: 28px 0 122px;
 
-  @include tablet {
-    padding: 34px 0 48px;
-  }
+    @include tablet {
+        padding: 34px 0 48px;
+    }
 }

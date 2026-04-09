@@ -66,7 +66,7 @@ export function initDesktopDock() {
         return;
     }
 
-    const productsById = new Map(productCards.map(({ productId, product }) => [productId, product]));
+    const productsById = new Map(productCards.map(({productId, product}) => [productId, product]));
     const state = loadState(productsById);
     let activePanelType = null;
 
@@ -118,7 +118,7 @@ export function initDesktopDock() {
     };
 
     const updateProductCards = () => {
-        productCards.forEach(({ productId, favoriteButton, cartButton, cartLabel }) => {
+        productCards.forEach(({productId, favoriteButton, cartButton, cartLabel}) => {
             const isFavorite = state.favorites.has(productId);
             const quantity = state.cart[productId] ?? 0;
 
@@ -147,7 +147,7 @@ export function initDesktopDock() {
                     product: productsById.get(productId),
                     quantity,
                 }))
-                .filter(({ product }) => Boolean(product));
+                .filter(({product}) => Boolean(product));
         }
 
         return Array.from(state.favorites)
@@ -155,10 +155,10 @@ export function initDesktopDock() {
                 product: productsById.get(productId),
                 quantity: state.cart[productId] ?? 0,
             }))
-            .filter(({ product }) => Boolean(product));
+            .filter(({product}) => Boolean(product));
     };
 
-    const renderPanelItem = ({ product, quantity }, isCartPanel) => {
+    const renderPanelItem = ({product, quantity}, isCartPanel) => {
         const controlsMarkup = isCartPanel
             ? `
                 <div class="shop-panel__controls">
@@ -251,7 +251,7 @@ export function initDesktopDock() {
         document.body.classList.add('shop-panel-open');
     };
 
-    productCards.forEach(({ productId, favoriteButton, cartButton }) => {
+    productCards.forEach(({productId, favoriteButton, cartButton}) => {
         favoriteButton?.addEventListener('click', () => {
             if (state.favorites.has(productId)) {
                 state.favorites.delete(productId);

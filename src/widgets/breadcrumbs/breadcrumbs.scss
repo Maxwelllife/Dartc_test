@@ -2,43 +2,43 @@
 @use '../../shared/styles/variables' as *;
 
 .breadcrumbs {
-  margin-top: 24px;
+    margin-top: 24px;
 
-  @include tablet {
-    margin-top: 32px;
-  }
-
-  &__list {
-    display: flex;
-    gap: 10px 18px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    color: $color-text-muted;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    white-space: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  &__item {
-    position: relative;
-
-    &:not(:last-child)::after {
-      content: '/';
-      position: absolute;
-      top: 0;
-      right: -11px;
+    @include tablet {
+        margin-top: 32px;
     }
 
-    &[aria-current='page'] {
-      color: $color-text;
+    &__list {
+        display: flex;
+        gap: 10px 18px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        color: $color-text-muted;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        white-space: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
-  }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child)::after {
+            content: '/';
+            position: absolute;
+            top: 0;
+            right: -11px;
+        }
+
+        &[aria-current='page'] {
+            color: $color-text;
+        }
+    }
 }

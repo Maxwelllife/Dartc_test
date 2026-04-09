@@ -2,156 +2,155 @@
 @use '../../shared/styles/variables' as *;
 
 .contact-section {
-  display: grid;
-  gap: 16px;
-  margin-top: 64px;
-  padding: 16px;
-
-  @include tablet {
-    border: 1px solid $color-border;
-    border-radius: 14px;
-    background: $color-page;
-    box-shadow: 0 8px 20px rgba(16, 24, 40, 0.06);
-    padding: 24px;
-  }
-
-  @include desktop {
-    max-width: 686px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section-heading {
-    justify-items: center;
-    text-align: center;
-  }
-}
-
-.contact-form {
-  display: grid;
-  gap: 8px;
-
-  @include tablet {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }
-
-  &__field {
     display: grid;
-    gap: 4px;
-
-    &--full {
-      @include tablet {
-        grid-column: 1 / -1;
-      }
-    }
-
-    &.is-error .contact-form__input {
-      border-color: $color-error;
-    }
-
-    &.is-error .contact-form__message {
-      color: $color-error;
-    }
-
-    &.is-success .contact-form__input {
-      border-color: $color-success;
-    }
-
-    &.is-success .contact-form__message {
-      color: $color-success;
-    }
-  }
-
-  &__label {
-    font-size: 15px;
-    font-weight: 600;
-    color: #717680;
-
-    span {
-      color: $color-brand;
-    }
-  }
-
-  &__input {
-    min-height: 38px;
-    padding: 10px 14px;
-    border: 1px solid $color-border;
-    border-radius: 10px;
-    background: $color-page;
-    color: $color-text;
-    font-size: 13px;
-    transition:
-      border-color $transition-base,
-      box-shadow $transition-base,
-      background-color $transition-base;
-
-    &::placeholder {
-      font-size: 14px;
-      color: #a4a7ae;
-    }
-
-    &:focus {
-      border-color: $color-brand;
-      outline: 0;
-      box-shadow: 0 0 0 4px rgba(127, 86, 217, 0.12);
-    }
-
-    &--textarea {
-      min-height: 100px;
-      padding-top: 12px;
-    }
-  }
-
-  &__message {
-    min-height: 12px;
-    font-size: 12px;
-    line-height: 1;
-    color: #98a2b3;
-  }
-
-  &__submit {
-    width: 100%;
-    max-width: 500px;
-    min-height: 40px;
-    margin-bottom: 12px;
-
-    &:disabled {
-      cursor: wait;
-      opacity: 0.72;
-    }
+    gap: 16px;
+    margin-top: 64px;
+    padding: 16px;
 
     @include tablet {
-      grid-column: 1 / -1;
+        border: 1px solid $color-border;
+        border-radius: 14px;
+        background: $color-page;
+        box-shadow: 0 8px 20px rgba(16, 24, 40, 0.06);
+        padding: 24px;
     }
 
     @include desktop {
-      justify-self: center;
-      width: fit-content;
-      min-width: 220px;
-    }
-  }
-
-  &__status {
-    min-height: 0;
-    margin: 0;
-    font-size: 12px;
-    font-weight: 600;
-
-    &:empty {
-      display: none;
+        max-width: 686px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    &.is-error {
-      color: $color-error;
+    .section-heading {
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+.contact-form {
+    display: grid;
+    gap: 8px;
+
+    @include tablet {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
     }
 
-    &.is-success {
-      color: $color-success;
+    &__field {
+        display: grid;
+        gap: 4px;
+
+        &--full {
+            @include tablet {
+                grid-column: 1 / -1;
+            }
+        }
+
+        &.is-error .contact-form__input {
+            border-color: $color-error;
+        }
+
+        &.is-error .contact-form__message {
+            color: $color-error;
+        }
+
+        &.is-success .contact-form__input {
+            border-color: $color-success;
+        }
+
+        &.is-success .contact-form__message {
+            color: $color-success;
+        }
     }
 
-    &.is-pending {
-      color: $color-brand;
+    &__label {
+        font-size: 15px;
+        font-weight: 600;
+        color: #717680;
+
+        span {
+            color: $color-brand;
+        }
     }
-  }
+
+    &__input {
+        min-height: 38px;
+        padding: 10px 14px;
+        border: 1px solid $color-border;
+        border-radius: 10px;
+        background: $color-page;
+        color: $color-text;
+        font-size: 13px;
+        transition: border-color $transition-base,
+        box-shadow $transition-base,
+        background-color $transition-base;
+
+        &::placeholder {
+            font-size: 14px;
+            color: #a4a7ae;
+        }
+
+        &:focus {
+            border-color: $color-brand;
+            outline: 0;
+            box-shadow: 0 0 0 4px rgba(127, 86, 217, 0.12);
+        }
+
+        &--textarea {
+            min-height: 100px;
+            padding-top: 12px;
+        }
+    }
+
+    &__message {
+        min-height: 12px;
+        font-size: 12px;
+        line-height: 1;
+        color: #98a2b3;
+    }
+
+    &__submit {
+        width: 100%;
+        max-width: 500px;
+        min-height: 40px;
+        margin-bottom: 12px;
+
+        &:disabled {
+            cursor: wait;
+            opacity: 0.72;
+        }
+
+        @include tablet {
+            grid-column: 1 / -1;
+        }
+
+        @include desktop {
+            justify-self: center;
+            width: fit-content;
+            min-width: 220px;
+        }
+    }
+
+    &__status {
+        min-height: 0;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+
+        &:empty {
+            display: none;
+        }
+
+        &.is-error {
+            color: $color-error;
+        }
+
+        &.is-success {
+            color: $color-success;
+        }
+
+        &.is-pending {
+            color: $color-brand;
+        }
+    }
 }

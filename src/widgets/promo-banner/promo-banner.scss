@@ -2,80 +2,80 @@
 @use '../../shared/styles/variables' as *;
 
 .promo-banner {
-  display: grid;
-  gap: 12px;
-  padding: 20px 18px 18px;
-  margin-top: 36px;
-  border-radius: 16px;
-  background: #ebe6fb;
-  color: rgba(66, 48, 125, 0.8);
-
-  @include tablet {
-    gap: 18px;
-    padding: 24px;
-  }
-
-  @include desktop {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 22px;
-    padding: 32px;
-  }
-
-  &__stars {
+    display: grid;
+    gap: 12px;
+    padding: 20px 18px 18px;
+    margin-top: 36px;
+    border-radius: 16px;
+    background: #ebe6fb;
     color: rgba(66, 48, 125, 0.8);
-    letter-spacing: 0.18em;
-    font-size: 28px;
-    line-height: 1;
-
-    @include desktop {
-      font-size: 34px;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    color: rgba(66, 48, 125, 0.8);
-    font-size: 24px;
-    line-height: 32px;
 
     @include tablet {
-      font-size: 30px;
+        gap: 18px;
+        padding: 24px;
     }
 
     @include desktop {
-      font-size: 36px;
-    }
-  }
-
-  &__text {
-    margin: 4px 0 8px;
-    color: rgba(66, 48, 125, 0.8);
-    font-size: 16px;
-    line-height: 1.5;
-
-    @include tablet {
-      font-size: 18px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 22px;
+        padding: 32px;
     }
 
-    @include desktop {
-      font-size: 22px;
-    }
-  }
+    &__stars {
+        color: rgba(66, 48, 125, 0.8);
+        letter-spacing: 0.18em;
+        font-size: 28px;
+        line-height: 1;
 
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42px;
-    padding: 12px 22px;
-    border-radius: 8px;
-    background: $color-brand;
-    color: $color-page;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-  }
+        @include desktop {
+            font-size: 34px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        color: rgba(66, 48, 125, 0.8);
+        font-size: 24px;
+        line-height: 32px;
+
+        @include tablet {
+            font-size: 30px;
+        }
+
+        @include desktop {
+            font-size: 36px;
+        }
+    }
+
+    &__text {
+        margin: 4px 0 8px;
+        color: rgba(66, 48, 125, 0.8);
+        font-size: 16px;
+        line-height: 1.5;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include desktop {
+            font-size: 22px;
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 12px 22px;
+        border-radius: 8px;
+        background: $color-brand;
+        color: $color-page;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+    }
 }

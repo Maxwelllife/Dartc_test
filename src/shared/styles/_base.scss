@@ -1,42 +1,42 @@
 @use 'variables' as *;
 
 html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  overflow-x: hidden;
-  color: $color-text;
-  background: $color-page;
-  font-family: 'Figtree', 'Segoe UI', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+    color: $color-text;
+    background: $color-page;
+    font-family: 'Figtree', 'Segoe UI', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.menu-open {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 img,
 svg {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 button,
 input,
 textarea {
-  font: inherit;
+    font: inherit;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }

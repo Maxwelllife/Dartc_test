@@ -93,7 +93,7 @@ export function initContactForm() {
         messageElement: fieldElement.closest('[data-form-field]')?.querySelector('[data-field-message]') ?? null,
     }));
 
-    fieldStates.forEach(({ fieldElement, fieldRoot, messageElement }) => {
+    fieldStates.forEach(({fieldElement, fieldRoot, messageElement}) => {
         const validateField = () => {
             updateFieldState(fieldElement, fieldRoot, messageElement);
         };
@@ -110,7 +110,7 @@ export function initContactForm() {
     formElement.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        const isFormValid = fieldStates.every(({ fieldElement, fieldRoot, messageElement }) =>
+        const isFormValid = fieldStates.every(({fieldElement, fieldRoot, messageElement}) =>
             updateFieldState(fieldElement, fieldRoot, messageElement),
         );
 
@@ -143,7 +143,7 @@ export function initContactForm() {
                     throw new Error('Request failed');
                 }
 
-                fieldStates.forEach(({ fieldElement, fieldRoot, messageElement }) => {
+                fieldStates.forEach(({fieldElement, fieldRoot, messageElement}) => {
                     resetFieldState(fieldElement, fieldRoot, messageElement);
                 });
 

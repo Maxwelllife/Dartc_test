@@ -1,532 +1,543 @@
 <!doctype html>
 <html lang="uk">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta
-      name="description"
-      content="Product page for a premium Android smartphone with gallery slider, breadcrumbs, related products and validated contact form."
+            name="description"
+            content="Product page for a premium Android smartphone with gallery slider, breadcrumbs, related products and validated contact form."
     />
     <meta
-      name="keywords"
-      content="TechStore, premium Android, smartphone, product page, gallery slider, related products, contact form"
+            name="keywords"
+            content="TechStore, premium Android, smartphone, product page, gallery slider, related products, contact form"
     />
-    <meta name="theme-color" content="#7F56D9" />
-    <meta name="color-scheme" content="light" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" type="image/png" href="/images/logo.png" />
-    <link rel="preload" href="/fonts/Figtree-400.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/Figtree-600.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/Figtree-700.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#7F56D9"/>
+    <meta name="color-scheme" content="light"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="preload" href="/fonts/Figtree-400.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/fonts/Figtree-600.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/fonts/Figtree-700.woff2" as="font" type="font/woff2" crossorigin/>
     <title>TechStore | Premium Android</title>
     <script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
-    <header class="site-header" data-menu-root>
-      <div class="container site-header__inner">
+</head>
+<body>
+<header class="site-header" data-menu-root>
+    <div class="container site-header__inner">
         <a class="site-header__brand" href="/" aria-label="TechStore home">
-          <span class="site-header__brand-text">TechStore</span>
+            <span class="site-header__brand-text">TechStore</span>
         </a>
         <button
-          class="site-header__burger"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-navigation"
-          aria-label="Open navigation"
-          data-menu-button
+                class="site-header__burger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="site-navigation"
+                aria-label="Open navigation"
+                data-menu-button
         >
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
         </button>
         <nav class="site-header__nav" id="site-navigation" data-menu-panel>
-          <ul class="site-header__nav-list">
-            <li><a class="site-header__nav-link" href="/home/">Home</a></li>
-            <li class="site-header__nav-item js--site-header__nav-item">
-              <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
-                <span>Shop</span>
-                <img
-                  class="site-header__chevron"
-                  src="/images/icons/arrow.svg"
-                  width="20"
-                  height="20"
-                  loading="eager"
-                  decoding="auto"
-                  alt="Arrow icon indicating an expandable navigation menu section"
-                />
-              </button>
-              <div class="site-header__submenu" data-nav-panel>
-                <a class="site-header__sub-link" href="/electronics/">Smartphones</a>
-                <a class="site-header__sub-link" href="/electronics/">Audio & Wearables</a>
-                <a class="site-header__sub-link" href="/android/">Android Deals</a>
-                <a class="site-header__sub-link" href="/premium/">Premium Picks</a>
-              </div>
-            </li>
-            <li class="site-header__nav-item js--site-header__nav-item">
-              <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
-                <span>Collection</span>
-                <img
-                  class="site-header__chevron"
-                  src="/images/icons/arrow.svg"
-                  width="20"
-                  height="20"
-                  loading="eager"
-                  decoding="auto"
-                  alt="Arrow icon indicating an expandable navigation menu section"
-                />
-              </button>
-              <div class="site-header__submenu" data-nav-panel>
-                <a class="site-header__sub-link" href="/">Travel Edit</a>
-                <a class="site-header__sub-link" href="/">Street Photo Kit</a>
-                <a class="site-header__sub-link" href="/">Workday Essentials</a>
-                <a class="site-header__sub-link" href="/">Weekend Escape</a>
-              </div>
-            </li>
-            <li class="site-header__nav-item js--site-header__nav-item">
-              <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
-                <span>Company</span>
-                <img
-                  class="site-header__chevron"
-                  src="/images/icons/arrow.svg"
-                  width="20"
-                  height="20"
-                  loading="eager"
-                  decoding="auto"
-                  alt="Arrow icon indicating an expandable navigation menu section"
-                />
-              </button>
-              <div class="site-header__submenu" data-nav-panel>
-                <a class="site-header__sub-link" href="/">About</a>
-                <a class="site-header__sub-link" href="/">FAQ</a>
-                <a class="site-header__sub-link" href="/">Reviews</a>
-                <a class="site-header__sub-link" href="/">Photos</a>
-                <a class="site-header__sub-link" href="/">Gift Boxes</a>
-                <a class="site-header__sub-link" href="#contact">Contact</a>
-              </div>
-            </li>
-            <li class="site-header__nav-item js--site-header__nav-item">
-              <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
-                <span>Support</span>
-                <img
-                  class="site-header__chevron"
-                  src="/images/icons/arrow.svg"
-                  width="20"
-                  height="20"
-                  loading="eager"
-                  decoding="auto"
-                  alt="Arrow icon indicating an expandable navigation menu section"
-                />
-              </button>
-              <div class="site-header__submenu" data-nav-panel>
-                <a class="site-header__sub-link" href="/">Track Order</a>
-                <a class="site-header__sub-link" href="/">Shipping & Returns</a>
-                <a class="site-header__sub-link" href="/">Warranty Center</a>
-                <a class="site-header__sub-link" href="#contact">Talk to Support</a>
-              </div>
-            </li>
-          </ul>
+            <ul class="site-header__nav-list">
+                <li><a class="site-header__nav-link" href="/home/">Home</a></li>
+                <li class="site-header__nav-item js--site-header__nav-item">
+                    <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
+                        <span>Shop</span>
+                        <img
+                                class="site-header__chevron"
+                                src="/images/icons/arrow.svg"
+                                width="20"
+                                height="20"
+                                loading="eager"
+                                decoding="auto"
+                                alt="Arrow icon indicating an expandable navigation menu section"
+                        />
+                    </button>
+                    <div class="site-header__submenu" data-nav-panel>
+                        <a class="site-header__sub-link" href="/electronics/">Smartphones</a>
+                        <a class="site-header__sub-link" href="/electronics/">Audio & Wearables</a>
+                        <a class="site-header__sub-link" href="/android/">Android Deals</a>
+                        <a class="site-header__sub-link" href="/premium/">Premium Picks</a>
+                    </div>
+                </li>
+                <li class="site-header__nav-item js--site-header__nav-item">
+                    <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
+                        <span>Collection</span>
+                        <img
+                                class="site-header__chevron"
+                                src="/images/icons/arrow.svg"
+                                width="20"
+                                height="20"
+                                loading="eager"
+                                decoding="auto"
+                                alt="Arrow icon indicating an expandable navigation menu section"
+                        />
+                    </button>
+                    <div class="site-header__submenu" data-nav-panel>
+                        <a class="site-header__sub-link" href="/">Travel Edit</a>
+                        <a class="site-header__sub-link" href="/">Street Photo Kit</a>
+                        <a class="site-header__sub-link" href="/">Workday Essentials</a>
+                        <a class="site-header__sub-link" href="/">Weekend Escape</a>
+                    </div>
+                </li>
+                <li class="site-header__nav-item js--site-header__nav-item">
+                    <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
+                        <span>Company</span>
+                        <img
+                                class="site-header__chevron"
+                                src="/images/icons/arrow.svg"
+                                width="20"
+                                height="20"
+                                loading="eager"
+                                decoding="auto"
+                                alt="Arrow icon indicating an expandable navigation menu section"
+                        />
+                    </button>
+                    <div class="site-header__submenu" data-nav-panel>
+                        <a class="site-header__sub-link" href="/">About</a>
+                        <a class="site-header__sub-link" href="/">FAQ</a>
+                        <a class="site-header__sub-link" href="/">Reviews</a>
+                        <a class="site-header__sub-link" href="/">Photos</a>
+                        <a class="site-header__sub-link" href="/">Gift Boxes</a>
+                        <a class="site-header__sub-link" href="#contact">Contact</a>
+                    </div>
+                </li>
+                <li class="site-header__nav-item js--site-header__nav-item">
+                    <button class="site-header__summary" type="button" aria-expanded="false" data-nav-toggle>
+                        <span>Support</span>
+                        <img
+                                class="site-header__chevron"
+                                src="/images/icons/arrow.svg"
+                                width="20"
+                                height="20"
+                                loading="eager"
+                                decoding="auto"
+                                alt="Arrow icon indicating an expandable navigation menu section"
+                        />
+                    </button>
+                    <div class="site-header__submenu" data-nav-panel>
+                        <a class="site-header__sub-link" href="/">Track Order</a>
+                        <a class="site-header__sub-link" href="/">Shipping & Returns</a>
+                        <a class="site-header__sub-link" href="/">Warranty Center</a>
+                        <a class="site-header__sub-link" href="#contact">Talk to Support</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
-      </div>
-      <div class="site-header__backdrop" data-menu-backdrop></div>
-    </header>
+    </div>
+    <div class="site-header__backdrop" data-menu-backdrop></div>
+</header>
 
-    <main class="page-content">
-      <div class="container">
+<main class="page-content">
+    <div class="container">
         <section class="hero-products">
-          <h1 class="visually-hidden">Featured products</h1>
-          <div class="hero-products__slider splide" data-product-slider aria-label="Product gallery">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <article
-                    class="hero-card hero-card--arrival"
-                    style="background-image: linear-gradient(135deg, rgba(16, 24, 40, 0.26), rgba(16, 24, 40, 0.1)), url('/images/article_1-clean.webp');"
-                  >
-                    <div class="hero-card__overlay">
-                      <div>
-                        <h2 class="hero-card__label">New Arrivals</h2>
-                      </div>
-                      <a class="button button--primary hero-card__button" href="#featured-product">View Product</a>
-                    </div>
-                  </article>
-                </li>
-                <li class="splide__slide">
-                  <article
-                    class="hero-card hero-card--sale"
-                    style="background-image: linear-gradient(135deg, rgba(16, 24, 40, 0.14), rgba(120, 84, 35, 0.08)), url('/images/article_2.webp');"
-                  >
-                    <div class="hero-card__overlay">
-                      <div>
-                        <h2 class="hero-card__label">Golden Hour</h2>
-                      </div>
-                      <a class="button button--primary hero-card__button" href="#related">View Product</a>
-                    </div>
-                  </article>
-                </li>
-                <li class="splide__slide">
-                  <article
-                    class="hero-card hero-card--bundle"
-                    style="background-image: linear-gradient(135deg, rgba(11, 40, 56, 0.18), rgba(16, 24, 40, 0.08)), url('/images/article_3.webp');"
-                  >
-                    <div class="hero-card__overlay">
-                      <div>
-                        <h2 class="hero-card__label">Lake Escape</h2>
-                      </div>
-                      <a class="button button--primary hero-card__button" href="#contact">View Product</a>
-                    </div>
-                  </article>
-                </li>
-              </ul>
+            <h1 class="visually-hidden">Featured products</h1>
+            <div class="hero-products__slider splide" data-product-slider aria-label="Product gallery">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <article
+                                    class="hero-card hero-card--arrival"
+                                    style="background-image: linear-gradient(135deg, rgba(16, 24, 40, 0.26), rgba(16, 24, 40, 0.1)), url('/images/article_1-clean.webp');"
+                            >
+                                <div class="hero-card__overlay">
+                                    <div>
+                                        <h2 class="hero-card__label">New Arrivals</h2>
+                                    </div>
+                                    <a class="button button--primary hero-card__button" href="#featured-product">View
+                                        Product</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article
+                                    class="hero-card hero-card--sale"
+                                    style="background-image: linear-gradient(135deg, rgba(16, 24, 40, 0.14), rgba(120, 84, 35, 0.08)), url('/images/article_2.webp');"
+                            >
+                                <div class="hero-card__overlay">
+                                    <div>
+                                        <h2 class="hero-card__label">Golden Hour</h2>
+                                    </div>
+                                    <a class="button button--primary hero-card__button" href="#related">View Product</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article
+                                    class="hero-card hero-card--bundle"
+                                    style="background-image: linear-gradient(135deg, rgba(11, 40, 56, 0.18), rgba(16, 24, 40, 0.08)), url('/images/article_3.webp');"
+                            >
+                                <div class="hero-card__overlay">
+                                    <div>
+                                        <h2 class="hero-card__label">Lake Escape</h2>
+                                    </div>
+                                    <a class="button button--primary hero-card__button" href="#contact">View Product</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </section>
 
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <ol class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="/home/">Home</a></li>
-            <li class="breadcrumbs__item"><a href="/electronics/">Electronics</a></li>
-            <li class="breadcrumbs__item"><a href="/smartphones/">Smartphones</a></li>
-            <li class="breadcrumbs__item"><a href="/android/">Android</a></li>
-            <li class="breadcrumbs__item" aria-current="page">Premium</li>
-          </ol>
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="/home/">Home</a></li>
+                <li class="breadcrumbs__item"><a href="/electronics/">Electronics</a></li>
+                <li class="breadcrumbs__item"><a href="/smartphones/">Smartphones</a></li>
+                <li class="breadcrumbs__item"><a href="/android/">Android</a></li>
+                <li class="breadcrumbs__item" aria-current="page">Premium</li>
+            </ol>
         </nav>
 
         <section class="promo-banner" aria-label="Social proof">
-          <div class="promo-banner__stars" aria-hidden="true">★★★★★</div>
-          <h2 class="promo-banner__title">Loved by tons of people! Real users, real results.</h2>
-          <p class="promo-banner__text">
-            Rated 4.8 out of 5 by over 7,809 customers, from first-time buyers to power users.
-          </p>
-          <a class="promo-banner__link" href="#featured-product">View Product</a>
+            <div class="promo-banner__stars" aria-hidden="true">★★★★★</div>
+            <h2 class="promo-banner__title">Loved by tons of people! Real users, real results.</h2>
+            <p class="promo-banner__text">
+                Rated 4.8 out of 5 by over 7,809 customers, from first-time buyers to power users.
+            </p>
+            <a class="promo-banner__link" href="#featured-product">View Product</a>
         </section>
 
         <section class="related-products" id="related" aria-labelledby="related-title">
-          <div class="section-heading">
-            <h2 class="section-heading__title" id="related-title">You May Also Like</h2>
-          </div>
-
-          <div class="related-products__grid">
-            <article
-              class="related-card related-card--compact"
-              data-product-id="iphone-15-pro"
-              data-product-name="iPhone 15 Pro"
-              data-product-price="999"
-              data-product-image="/images/iphone-15-pro.webp"
-            >
-              <button
-                class="favorite-button"
-                type="button"
-                aria-label="Add iPhone 15 Pro to favorites"
-                aria-pressed="false"
-                data-favorite-toggle
-              >
-                <svg
-                  class="favorite-button__icon"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" fill="white" />
-                  <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" stroke="#F5F5F5" />
-                  <path
-                    class="favorite-button__heart"
-                    d="M18.4112 28.4677C15.5899 26.358 10.0005 21.5348 10.0005 17.1944C10.0005 14.3256 12.1057 12 15.0005 12C16.5005 12 18.0005 12.5 20.0005 14.5C22.0005 12.5 23.5005 12 25.0005 12C27.8952 12 30.0005 14.3256 30.0005 17.1944C30.0005 21.5348 24.4111 26.358 21.5898 28.4677C20.6404 29.1776 19.3606 29.1776 18.4112 28.4677Z"
-                    fill="transparent"
-                    stroke="black"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="related-card__media">
-                <img
-                  class="related-card__image related-card__image--phone"
-                  src="/images/iphone-15-pro.webp"
-                  width="960"
-                  height="540"
-                  loading="lazy"
-                  decoding="async"
-                  alt="Apple iPhone 15 Pro product photo"
-                />
-              </div>
-              <h3 class="related-card__title">iPhone 15 Pro</h3>
-              <p class="related-card__specs">256GB · 8GB RAM · Black</p>
-              <p class="related-card__price-row">
-                <span class="related-card__price">$999</span>
-                <span class="related-card__old-price">$1,199</span>
-              </p>
-              <button class="button button--primary related-card__action" type="button" data-cart-add>
-                <span data-cart-label>Add</span>
-              </button>
-            </article>
-
-            <article
-              class="related-card related-card--compact"
-              data-product-id="google-pixel-8"
-              data-product-name="Google Pixel 8"
-              data-product-price="599"
-              data-product-image="/images/google-pixel-8.webp"
-            >
-              <button
-                class="favorite-button"
-                type="button"
-                aria-label="Add Google Pixel 8 to favorites"
-                aria-pressed="false"
-                data-favorite-toggle
-              >
-                <svg
-                  class="favorite-button__icon"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" fill="white" />
-                  <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" stroke="#F5F5F5" />
-                  <path
-                    class="favorite-button__heart"
-                    d="M18.4112 28.4677C15.5899 26.358 10.0005 21.5348 10.0005 17.1944C10.0005 14.3256 12.1057 12 15.0005 12C16.5005 12 18.0005 12.5 20.0005 14.5C22.0005 12.5 23.5005 12 25.0005 12C27.8952 12 30.0005 14.3256 30.0005 17.1944C30.0005 21.5348 24.4111 26.358 21.5898 28.4677C20.6404 29.1776 19.3606 29.1776 18.4112 28.4677Z"
-                    fill="transparent"
-                    stroke="black"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="related-card__media">
-                <img
-                  class="related-card__image related-card__image--phone"
-                  src="/images/google-pixel-8.webp"
-                  width="960"
-                  height="529"
-                  loading="lazy"
-                  decoding="async"
-                  alt="Google Pixel 8 product photo in hazel"
-                />
-              </div>
-              <h3 class="related-card__title">Google Pixel 8</h3>
-              <p class="related-card__specs">128GB · 8GB RAM · Hazel</p>
-              <p class="related-card__price-row">
-                <span class="related-card__price">$599</span>
-                <span class="related-card__old-price">$699</span>
-              </p>
-              <button class="button button--primary related-card__action" type="button" data-cart-add>
-                <span data-cart-label>Add</span>
-              </button>
-            </article>
-          </div>
-
-          <article
-            class="related-card related-card--featured"
-            id="featured-product"
-            data-product-id="samsung-galaxy-s24-ultra"
-            data-product-name="Samsung Galaxy S24 Ultra"
-            data-product-price="999"
-            data-product-image="/images/samsung-galaxy-s24-ultra.webp"
-          >
-            <button
-              class="favorite-button"
-              type="button"
-              aria-label="Add Samsung Galaxy S24 Ultra to favorites"
-              aria-pressed="false"
-              data-favorite-toggle
-            >
-              <svg
-                class="favorite-button__icon"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" fill="white" />
-                <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z" stroke="#F5F5F5" />
-                <path
-                  class="favorite-button__heart"
-                  d="M18.4112 28.4677C15.5899 26.358 10.0005 21.5348 10.0005 17.1944C10.0005 14.3256 12.1057 12 15.0005 12C16.5005 12 18.0005 12.5 20.0005 14.5C22.0005 12.5 23.5005 12 25.0005 12C27.8952 12 30.0005 14.3256 30.0005 17.1944C30.0005 21.5348 24.4111 26.358 21.5898 28.4677C20.6404 29.1776 19.3606 29.1776 18.4112 28.4677Z"
-                  fill="transparent"
-                  stroke="black"
-                  stroke-width="1.75"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <div class="related-card__media related-card__media--featured">
-              <img
-                class="related-card__image related-card__image--featured"
-                src="/images/samsung-galaxy-s24-ultra.webp"
-                width="590"
-                height="531"
-                loading="lazy"
-                decoding="async"
-                alt="Samsung Galaxy S24 Ultra official product image"
-              />
+            <div class="section-heading">
+                <h2 class="section-heading__title" id="related-title">You May Also Like</h2>
             </div>
-            <span class="related-card__label">New Release</span>
-            <h3 class="related-card__title">Samsung Galaxy S24 Ultra</h3>
-            <p class="related-card__specs">512GB · 12GB RAM · Titanium Gray</p>
-            <p class="related-card__price-row">
-              <span class="related-card__price">$999</span>
-              <span class="related-card__old-price">$1,199</span>
-            </p>
-            <a class="button button--primary related-card__action" href="/featured-product/">View Product</a>
-          </article>
+
+            <div class="related-products__grid">
+                <article
+                        class="related-card related-card--compact"
+                        data-product-id="iphone-15-pro"
+                        data-product-name="iPhone 15 Pro"
+                        data-product-price="999"
+                        data-product-image="/images/iphone-15-pro.webp"
+                >
+                    <button
+                            class="favorite-button"
+                            type="button"
+                            aria-label="Add iPhone 15 Pro to favorites"
+                            aria-pressed="false"
+                            data-favorite-toggle
+                    >
+                        <svg
+                                class="favorite-button__icon"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                        >
+                            <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z"
+                                  fill="white"/>
+                            <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z"
+                                  stroke="#F5F5F5"/>
+                            <path
+                                    class="favorite-button__heart"
+                                    d="M18.4112 28.4677C15.5899 26.358 10.0005 21.5348 10.0005 17.1944C10.0005 14.3256 12.1057 12 15.0005 12C16.5005 12 18.0005 12.5 20.0005 14.5C22.0005 12.5 23.5005 12 25.0005 12C27.8952 12 30.0005 14.3256 30.0005 17.1944C30.0005 21.5348 24.4111 26.358 21.5898 28.4677C20.6404 29.1776 19.3606 29.1776 18.4112 28.4677Z"
+                                    fill="transparent"
+                                    stroke="black"
+                                    stroke-width="1.75"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+                    <div class="related-card__media">
+                        <img
+                                class="related-card__image related-card__image--phone"
+                                src="/images/iphone-15-pro.webp"
+                                width="960"
+                                height="540"
+                                loading="lazy"
+                                decoding="async"
+                                alt="Apple iPhone 15 Pro product photo"
+                        />
+                    </div>
+                    <h3 class="related-card__title">iPhone 15 Pro</h3>
+                    <p class="related-card__specs">256GB · 8GB RAM · Black</p>
+                    <p class="related-card__price-row">
+                        <span class="related-card__price">$999</span>
+                        <span class="related-card__old-price">$1,199</span>
+                    </p>
+                    <button class="button button--primary related-card__action" type="button" data-cart-add>
+                        <span data-cart-label>Add</span>
+                    </button>
+                </article>
+
+                <article
+                        class="related-card related-card--compact"
+                        data-product-id="google-pixel-8"
+                        data-product-name="Google Pixel 8"
+                        data-product-price="599"
+                        data-product-image="/images/google-pixel-8.webp"
+                >
+                    <button
+                            class="favorite-button"
+                            type="button"
+                            aria-label="Add Google Pixel 8 to favorites"
+                            aria-pressed="false"
+                            data-favorite-toggle
+                    >
+                        <svg
+                                class="favorite-button__icon"
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                        >
+                            <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z"
+                                  fill="white"/>
+                            <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z"
+                                  stroke="#F5F5F5"/>
+                            <path
+                                    class="favorite-button__heart"
+                                    d="M18.4112 28.4677C15.5899 26.358 10.0005 21.5348 10.0005 17.1944C10.0005 14.3256 12.1057 12 15.0005 12C16.5005 12 18.0005 12.5 20.0005 14.5C22.0005 12.5 23.5005 12 25.0005 12C27.8952 12 30.0005 14.3256 30.0005 17.1944C30.0005 21.5348 24.4111 26.358 21.5898 28.4677C20.6404 29.1776 19.3606 29.1776 18.4112 28.4677Z"
+                                    fill="transparent"
+                                    stroke="black"
+                                    stroke-width="1.75"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+                    <div class="related-card__media">
+                        <img
+                                class="related-card__image related-card__image--phone"
+                                src="/images/google-pixel-8.webp"
+                                width="960"
+                                height="529"
+                                loading="lazy"
+                                decoding="async"
+                                alt="Google Pixel 8 product photo in hazel"
+                        />
+                    </div>
+                    <h3 class="related-card__title">Google Pixel 8</h3>
+                    <p class="related-card__specs">128GB · 8GB RAM · Hazel</p>
+                    <p class="related-card__price-row">
+                        <span class="related-card__price">$599</span>
+                        <span class="related-card__old-price">$699</span>
+                    </p>
+                    <button class="button button--primary related-card__action" type="button" data-cart-add>
+                        <span data-cart-label>Add</span>
+                    </button>
+                </article>
+            </div>
+
+            <article
+                    class="related-card related-card--featured"
+                    id="featured-product"
+                    data-product-id="samsung-galaxy-s24-ultra"
+                    data-product-name="Samsung Galaxy S24 Ultra"
+                    data-product-price="999"
+                    data-product-image="/images/samsung-galaxy-s24-ultra.webp"
+            >
+                <button
+                        class="favorite-button"
+                        type="button"
+                        aria-label="Add Samsung Galaxy S24 Ultra to favorites"
+                        aria-pressed="false"
+                        data-favorite-toggle
+                >
+                    <svg
+                            class="favorite-button__icon"
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                    >
+                        <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z"
+                              fill="white"/>
+                        <path d="M20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20C0.5 9.23045 9.23045 0.5 20 0.5Z"
+                              stroke="#F5F5F5"/>
+                        <path
+                                class="favorite-button__heart"
+                                d="M18.4112 28.4677C15.5899 26.358 10.0005 21.5348 10.0005 17.1944C10.0005 14.3256 12.1057 12 15.0005 12C16.5005 12 18.0005 12.5 20.0005 14.5C22.0005 12.5 23.5005 12 25.0005 12C27.8952 12 30.0005 14.3256 30.0005 17.1944C30.0005 21.5348 24.4111 26.358 21.5898 28.4677C20.6404 29.1776 19.3606 29.1776 18.4112 28.4677Z"
+                                fill="transparent"
+                                stroke="black"
+                                stroke-width="1.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+                <div class="related-card__media related-card__media--featured">
+                    <img
+                            class="related-card__image related-card__image--featured"
+                            src="/images/samsung-galaxy-s24-ultra.webp"
+                            width="590"
+                            height="531"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Samsung Galaxy S24 Ultra official product image"
+                    />
+                </div>
+                <span class="related-card__label">New Release</span>
+                <h3 class="related-card__title">Samsung Galaxy S24 Ultra</h3>
+                <p class="related-card__specs">512GB · 12GB RAM · Titanium Gray</p>
+                <p class="related-card__price-row">
+                    <span class="related-card__price">$999</span>
+                    <span class="related-card__old-price">$1,199</span>
+                </p>
+                <a class="button button--primary related-card__action" href="/featured-product/">View Product</a>
+            </article>
         </section>
 
         <section class="contact-section" id="contact" aria-labelledby="contact-title">
-          <div class="section-heading">
-            <h2 class="section-heading__title" id="contact-title">Get in Touch</h2>
-          </div>
+            <div class="section-heading">
+                <h2 class="section-heading__title" id="contact-title">Get in Touch</h2>
+            </div>
 
-          <form class="contact-form" data-contact-form novalidate>
-            <label class="contact-form__field" data-form-field>
-              <span class="contact-form__label">Name <span aria-hidden="true" class="required-star">*</span></span>
-              <input
-                class="contact-form__input"
-                type="text"
-                name="name"
-                placeholder="Name"
-                autocomplete="name"
-                required
-                data-validate-field
-              />
-              <span class="contact-form__message" data-field-message></span>
-            </label>
+            <form class="contact-form" data-contact-form novalidate>
+                <label class="contact-form__field" data-form-field>
+                    <span class="contact-form__label">Name <span aria-hidden="true"
+                                                                 class="required-star">*</span></span>
+                    <input
+                            class="contact-form__input"
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            autocomplete="name"
+                            required
+                            data-validate-field
+                    />
+                    <span class="contact-form__message" data-field-message></span>
+                </label>
 
-            <label class="contact-form__field" data-form-field>
-              <span class="contact-form__label">Email <span aria-hidden="true" class="required-star">*</span></span>
-              <input
-                class="contact-form__input"
-                type="email"
-                name="email"
-                placeholder="Email"
-                autocomplete="email"
-                required
-                data-validate-field
-              />
-              <span class="contact-form__message" data-field-message></span>
-            </label>
+                <label class="contact-form__field" data-form-field>
+                    <span class="contact-form__label">Email <span aria-hidden="true"
+                                                                  class="required-star">*</span></span>
+                    <input
+                            class="contact-form__input"
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            autocomplete="email"
+                            required
+                            data-validate-field
+                    />
+                    <span class="contact-form__message" data-field-message></span>
+                </label>
 
-            <label class="contact-form__field contact-form__field--full" data-form-field>
-              <span class="contact-form__label">Message <span aria-hidden="true" class="required-star">*</span></span>
-              <textarea
-                class="contact-form__input contact-form__input--textarea"
-                name="message"
-                placeholder="Message"
-                required
-                data-validate-field
-              ></textarea>
-              <span class="contact-form__message" data-field-message></span>
-            </label>
+                <label class="contact-form__field contact-form__field--full" data-form-field>
+                    <span class="contact-form__label">Message <span aria-hidden="true"
+                                                                    class="required-star">*</span></span>
+                    <textarea
+                            class="contact-form__input contact-form__input--textarea"
+                            name="message"
+                            placeholder="Message"
+                            required
+                            data-validate-field
+                    ></textarea>
+                    <span class="contact-form__message" data-field-message></span>
+                </label>
 
-            <button class="button button--primary contact-form__submit" type="submit">Send Message</button>
-            <p class="contact-form__status" data-form-status></p>
-          </form>
+                <button class="button button--primary contact-form__submit" type="submit">Send Message</button>
+                <p class="contact-form__status" data-form-status></p>
+            </form>
         </section>
-      </div>
-    </main>
+    </div>
+</main>
 
-    <nav class="mobile-dock" aria-label="Mobile quick navigation">
-      <a class="mobile-dock__item is-active" href="/home/" aria-label="Home">
+<nav class="mobile-dock" aria-label="Mobile quick navigation">
+    <a class="mobile-dock__item is-active" href="/home/" aria-label="Home">
         <img
-          src="/images/icons/home.svg"
-          width="40"
-          height="40"
-          loading="eager"
-          decoding="auto"
-          alt="Home navigation icon for the mobile bottom menu"
+                src="/images/icons/home.svg"
+                width="40"
+                height="40"
+                loading="eager"
+                decoding="auto"
+                alt="Home navigation icon for the mobile bottom menu"
         />
-      </a>
-      <a class="mobile-dock__item" href="/electronics/" aria-label="Menu">
+    </a>
+    <a class="mobile-dock__item" href="/electronics/" aria-label="Menu">
         <img
-          src="/images/icons/settings.svg"
-          width="40"
-          height="40"
-          loading="eager"
-          decoding="auto"
-          alt="Grid navigation icon for the mobile bottom menu"
+                src="/images/icons/settings.svg"
+                width="40"
+                height="40"
+                loading="eager"
+                decoding="auto"
+                alt="Grid navigation icon for the mobile bottom menu"
         />
-      </a>
-      <button class="mobile-dock__item mobile-dock__button" type="button" aria-label="Favorites" data-panel-open="favorites">
+    </a>
+    <button class="mobile-dock__item mobile-dock__button" type="button" aria-label="Favorites"
+            data-panel-open="favorites">
         <span class="mobile-dock__badge" data-favorites-count hidden>0</span>
         <img
-          src="/images/icons/favourite.svg"
-          width="40"
-          height="40"
-          loading="eager"
-          decoding="auto"
-          alt="Favorites navigation icon for the mobile bottom menu"
+                src="/images/icons/favourite.svg"
+                width="40"
+                height="40"
+                loading="eager"
+                decoding="auto"
+                alt="Favorites navigation icon for the mobile bottom menu"
         />
-      </button>
-      <button class="mobile-dock__item mobile-dock__button" type="button" aria-label="Bag" data-panel-open="cart">
+    </button>
+    <button class="mobile-dock__item mobile-dock__button" type="button" aria-label="Bag" data-panel-open="cart">
         <span class="mobile-dock__badge" data-cart-count hidden>0</span>
         <img
-          src="/images/icons/cart.svg"
-          width="40"
-          height="40"
-          loading="eager"
-          decoding="auto"
-          alt="Shopping cart navigation icon for the mobile bottom menu"
+                src="/images/icons/cart.svg"
+                width="40"
+                height="40"
+                loading="eager"
+                decoding="auto"
+                alt="Shopping cart navigation icon for the mobile bottom menu"
         />
-      </button>
-    </nav>
+    </button>
+</nav>
 
-    <nav class="desktop-dock" aria-label="Desktop quick actions">
-      <button class="desktop-dock__button" type="button" aria-label="Favorites" data-panel-open="favorites">
+<nav class="desktop-dock" aria-label="Desktop quick actions">
+    <button class="desktop-dock__button" type="button" aria-label="Favorites" data-panel-open="favorites">
         <span class="desktop-dock__badge" data-favorites-count hidden>0</span>
         <img
-          src="/images/icons/favourite.svg"
-          width="40"
-          height="40"
-          loading="eager"
-          decoding="auto"
-          alt="Favorites quick action icon"
+                src="/images/icons/favourite.svg"
+                width="40"
+                height="40"
+                loading="eager"
+                decoding="auto"
+                alt="Favorites quick action icon"
         />
-      </button>
-      <button class="desktop-dock__button" type="button" aria-label="Cart" data-panel-open="cart">
+    </button>
+    <button class="desktop-dock__button" type="button" aria-label="Cart" data-panel-open="cart">
         <span class="desktop-dock__badge" data-cart-count hidden>0</span>
         <img
-          src="/images/icons/cart.svg"
-          width="40"
-          height="40"
-          loading="eager"
-          decoding="auto"
-          alt="Cart quick action icon"
+                src="/images/icons/cart.svg"
+                width="40"
+                height="40"
+                loading="eager"
+                decoding="auto"
+                alt="Cart quick action icon"
         />
-      </button>
-    </nav>
+    </button>
+</nav>
 
-    <div class="shop-panel-backdrop" data-shop-panel-backdrop hidden></div>
-    <aside class="shop-panel" aria-hidden="true" data-shop-panel hidden>
-      <div class="shop-panel__header">
+<div class="shop-panel-backdrop" data-shop-panel-backdrop hidden></div>
+<aside class="shop-panel" aria-hidden="true" data-shop-panel hidden>
+    <div class="shop-panel__header">
         <div class="shop-panel__brand">
-          <span class="shop-panel__brand-text">TechStore</span>
-          <h2 class="shop-panel__title" data-shop-panel-title>Favorites</h2>
+            <span class="shop-panel__brand-text">TechStore</span>
+            <h2 class="shop-panel__title" data-shop-panel-title>Favorites</h2>
         </div>
         <button class="shop-panel__close" type="button" aria-label="Close panel" data-shop-panel-close>
-          <span></span>
-          <span></span>
+            <span></span>
+            <span></span>
         </button>
-      </div>
-      <div class="shop-panel__body">
+    </div>
+    <div class="shop-panel__body">
         <div class="shop-panel__empty" data-shop-panel-empty>No items yet.</div>
         <div class="shop-panel__list" data-shop-panel-list></div>
-      </div>
-      <div class="shop-panel__footer" data-shop-panel-footer hidden>
+    </div>
+    <div class="shop-panel__footer" data-shop-panel-footer hidden>
         <div class="shop-panel__total-row">
-          <span>Total</span>
-          <strong data-shop-panel-total>$0</strong>
+            <span>Total</span>
+            <strong data-shop-panel-total>$0</strong>
         </div>
         <a class="button button--primary shop-panel__checkout" href="/checkout/">Checkout</a>
-      </div>
-    </aside>
-  </body>
+    </div>
+</aside>
+</body>
 </html>
