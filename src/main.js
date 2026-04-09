@@ -1,12 +1,6 @@
-import './styles.scss';
+import './app/styles/app.scss';
+import { initApp } from './app/app.js';
 
-const button = document.querySelector('.hero__button');
-console.log('test')
-if (button) {
-  button.addEventListener('click', () => {
-    button.classList.toggle('is-active');
-    button.textContent = button.classList.contains('is-active')
-      ? 'Interaction works'
-      : 'Check interaction';
-  });
-}
+document.addEventListener('DOMContentLoaded', () => {
+    initApp();
+});

@@ -1,0 +1,17 @@
+@use '../../widgets/site-header/site-header';
+@use '../../widgets/hero-products/hero-products';
+@use '../../widgets/breadcrumbs/breadcrumbs';
+@use '../../widgets/promo-banner/promo-banner';
+@use '../../widgets/related-products/related-products';
+@use '../../features/contact-form/contact-form';
+@use '../../widgets/mobile-dock/mobile-dock';
+@use '../../widgets/shop-panel/shop-panel';
+@use '../../shared/styles/mixins' as *;
+
+.page-content {
+  padding: 28px 0 122px;
+
+  @include tablet {
+    padding: 34px 0 48px;
+  }
+}

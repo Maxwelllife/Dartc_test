@@ -1,0 +1,37 @@
+@use '../../shared/styles/variables' as *;
+@use '../../shared/styles/mixins' as *;
+
+.simple-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 0;
+
+  &__card {
+    width: min(100%, 560px);
+    padding: 32px;
+    border: 1px solid $color-border;
+    border-radius: 24px;
+    background: $color-page;
+    box-shadow: 0 16px 32px rgba(16, 24, 40, 0.08);
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-brand-dark;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+
+    @include tablet {
+      gap: 16px;
+    }
+  }
+}

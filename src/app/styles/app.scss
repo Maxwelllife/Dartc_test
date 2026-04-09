@@ -1,0 +1,9 @@
+@use '../../shared/styles/normalize';
+@use '../../shared/styles/fonts';
+@use '../../shared/styles/variables';
+@use '../../shared/styles/mixins';
+@use '../../shared/styles/helpers';
+@use '../../shared/styles/base';
+@use '../../pages/product/product';
+@use '../../pages/empty/empty';
+@import '@splidejs/splide/dist/css/splide.min.css';

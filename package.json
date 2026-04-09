@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@fontsource/figtree": "^5.2.10",
+    "@splidejs/splide": "^4.1.4",
+    "modern-normalize": "^3.0.1",
     "sass": "^1.93.2",
     "vite": "^7.1.9"
   }
